@@ -1,10 +1,4 @@
-import os
-import cv2
 
-
-path = "Images/"
-
-images = []
 
 
 for file in os.listdir(path):
@@ -30,6 +24,5 @@ for i in range(0,count):
      frame = cv2.imread(images[i])
      out.write(frame)
     
-out.release() # releasing the video generated
-print("done")
+
 
